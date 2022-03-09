@@ -38,8 +38,6 @@ def search(search, page, purity):
         purity = '111'
     elif purity == 'sketchy':
         purity = '010'
-    elif purity == 'nsfw':
-        purity = '001'
     else:
         return 'Not have purity.'
     for i in range(int(page)):
