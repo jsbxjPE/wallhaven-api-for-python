@@ -21,7 +21,7 @@ def search_x(search, page, purity, x_api):
         'X-API':x_api
     }
     for i in range(int(page)):
-        wall_url = 'https://wallhaven.cc/api/v1/search?q={}&page={}&purity={}}'.format(search,str(i+1),str(purity))
+        wall_url = 'https://wallhaven.cc/api/v1/search?q={}&page={}&purity={}&apikey={}&sorting=relevance&order=desc'.format(search,str(i+1),str(purity),str(x_api))
         data = json.loads(requests.get(url=wall_url, headers=header).text)
         if data['data'] == []:
             return 'Data no data.'
