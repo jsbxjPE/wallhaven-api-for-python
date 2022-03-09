@@ -12,7 +12,7 @@ api支持: https://wallhaven.cc/help/api (官方)
 ## 依赖
 
 ```sh
-# pip install requests
+pip install requests
 ```
 
 ## 快速开始
@@ -20,30 +20,30 @@ api支持: https://wallhaven.cc/help/api (官方)
 导入库文件
 
 ```python
-# import wallhavenapi
+import wallhavenapi
 ```
 
 搜索(基础)
 
 ```python
-# wallhavenapi.search(search = 'name', page = 'number', purity = 'sfw')
+wallhavenapi.search(search = 'name', page = 'number', purity = 'sfw')
 ```
 
 搜索(高级)
 
 ```python
-# wallhavenapi.search_x(search = 'name', page = 'number', purity = 'sfw', x_api = 'your x-api')
+wallhavenapi.search_x(search = 'name', page = 'number', purity = 'sfw', x_api = 'your x-api')
 ```
 
 下载(基础)
 ```python
-# wallhavenapi.download(dir_name = 'your path')
+wallhavenapi.download(dir_name = 'your path')
 ```
 
 
 下载(高级)
 ```python
-# wallhavenapi.download_x(dir_name = 'your path', x_api = 'your x-api')
+wallhavenapi.download_x(dir_name = 'your path', x_api = 'your x-api')
 ```
 
 ## 使用方法
