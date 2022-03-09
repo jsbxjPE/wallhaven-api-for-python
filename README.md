@@ -7,7 +7,7 @@ wallhaven api for python
 
 ## 描述
 
-api支持: https://wallhaven.cc/help/api (the official one)
+api支持: https://wallhaven.cc/help/api (官方)
 
 ## 依赖
 
