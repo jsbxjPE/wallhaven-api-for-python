@@ -50,7 +50,7 @@ wallhavenapi.download_x(dir_name = 'your path', x_api = 'your x-api')
 
 ### wallhavenapi.search_x
 
-* x_api {Srting} 你的 **[Wallhaven](https://wallhaven.cc) ** [api key](https://wallhaven.cc/settings/account)
+* x_api {Srting} 你的 [Wallhaven](https://wallhaven.cc)  [api key](https://wallhaven.cc/settings/account)
 * page {Srting} 页数
 * purity {Srting} 有sfw , sketchy , nsfw 模式
 * search {Srting} 搜索名
@@ -64,7 +64,7 @@ wallhavenapi.download_x(dir_name = 'your path', x_api = 'your x-api')
 
 ### wallhavenapi.download_x
 
-* x_api {Srting} 你的 **[Wallhaven](https://wallhaven.cc) ** [api key](https://wallhaven.cc/settings/account)
+* x_api {Srting} 你的 [Wallhaven](https://wallhaven.cc)  [api key](https://wallhaven.cc/settings/account)
 * path {Srting} 下载文件夹路径
 
 ### wallhavenapi.download
