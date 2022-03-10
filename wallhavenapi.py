@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 
 global path_url
 global url_id
@@ -22,6 +23,7 @@ def search_x(search, page, purity, x_api):
     }
     for i in range(int(page)):
         wall_url = 'https://wallhaven.cc/api/v1/search?q={}&page={}&purity={}&apikey={}&sorting=relevance&order=desc'.format(search,str(i+1),str(purity),str(x_api))
+        # print(wall_url)
         data = json.loads(requests.get(url=wall_url, headers=header).text)
         if data['data'] == []:
             return 'Data no data.'
@@ -63,6 +65,8 @@ def download_x(dir_name, x_api):
         with open(name, 'wb') as f:
             f.write(content)
         num = num + 1
+        # print('已完成{}张,还剩{}张'.format(str(num), str(max_num - num)))
+        time.sleep(1.4)
     return 'Download ok'
 def download(dir_name):
     global path_url
@@ -74,4 +78,10 @@ def download(dir_name):
         with open(name, 'wb') as f:
             f.write(content)
         num = num + 1
+        # print('已完成{}张,还剩{}张'.format(str(num), str(max_num - num)))
+        time.sleep(1.4)
     return 'Download ok'
+'''
+download_x('./r18','Si0s4qk1E2Ul8bcL8ZfylrJbUSO0WHlb')
+search_x('miku','6','nsfw','Si0s4qk1E2Ul8bcL8ZfylrJbUSO0WHlb')
+download_x('./r18','Si0s4qk1E2Ul8bcL8ZfylrJbUSO0WHlb')'''
